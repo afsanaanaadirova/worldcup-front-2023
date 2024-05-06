@@ -1,0 +1,103 @@
+/*
+ *  Flex Layout Specifics
+*/
+main{
+    display:flex;
+    flex-direction:row;
+  }
+  .round{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    width:250px;
+    list-style:none;
+    padding:0;
+  }
+  .round-2{
+    width: 53px;
+  }
+    .round .spacer{ flex-grow:1; }
+    .round .spacer:first-child,
+    .round .spacer:last-child{ flex-grow:.1; }
+  
+    .round .game-spacer{
+      flex-grow:1;
+    }
+  
+  /*
+   *  General Styles
+  */
+ 
+  
+  li.game{
+    padding-left:20px;
+  }
+  
+    li.game.winner{
+      font-weight:bold;
+      background: #FFFFFF;
+      border: 1px solid #DFE5EA;
+      border-radius: 10px 10px 0px 0px;
+      padding: 12px 10px;
+      display: flex;
+      align-items: center;
+      column-gap: 12px;
+      font-size: 12px;
+    }
+    li.game span{
+      float:right;
+      margin-right:5px;
+    }
+  
+    li.game-top{ border-bottom:1px solid #aaa; }
+  
+    li.game-spacer{ 
+      border-right:1px solid #aaa;
+      min-height:40px;
+      padding-left: unset;
+      width: 52px;
+      padding-bottom: 16px;
+      margin-top: 34px;
+      border: 1.5px solid #AEBDCA;
+      border-radius: 10px;
+      border-left: unset;
+      border-top-left-radius: unset;
+      border-bottom-left-radius: unset;
+    }
+  
+    li.game-bottom{ 
+      border-top:1px solid #aaa;
+      padding: 12px 10px;
+      display: flex;
+      align-items: center;
+      background: #FFF5E4;
+      border: 1px solid #DFE5EA;
+      border-radius: 0px 0px 10px 10px;
+      column-gap: 12px;
+      font-size: 12px;
+    }
+    .game-bottom-border{
+      padding: unset!important;
+    }
+.game-title{
+  background: #F7F8FA;
+  border: 1px solid #DFE5EA;
+  box-shadow: 0px 2px 4px rgba(45, 52, 57, 0.04);
+  border-radius: 10px;
+  padding: 10px 88px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  margin-bottom: 10px;
+}
+#tournament{
+  padding-top: 40px;
+}
+.round-2{
+  margin-top: 7%;
+}
+.round-3{
+  margin-top: 70px;
+}
