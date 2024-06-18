@@ -1,1 +1,1 @@
-https://worldcup2023.fide.com/contact
+https://worldcup2023.fide.com
